@@ -1,0 +1,374 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 11:32:04 +0530
+
+Mysql2::Error (Access denied for user 'root'@'localhost' (using password: NO)):
+  mysql2 (0.3.14) lib/mysql2/client.rb:67:in `connect'
+  mysql2 (0.3.14) lib/mysql2/client.rb:67:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /home/yadagiri-tandu/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/yadagiri-tandu/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__687171139__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/yadagiri-tandu/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/yadagiri-tandu/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/yadagiri-tandu/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/yadagiri-tandu/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/yadagiri-tandu/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/yadagiri-tandu/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/yadagiri-tandu/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.2ms)
+  [1m[36m (140.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (255.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20131230060356)
+  [1m[35m (165.6ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20131230060356')
+  [1m[36m (93.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-30 11:38:10 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/yadagiri-tandu/.rvm/gems/ruby-2.0.0-p353/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 44ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2013-12-30 11:38:15 +0530
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 397ms (Views: 393.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 11:38:16 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-30 11:38:16 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-30 11:38:16 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-30 11:38:16 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-30 11:38:16 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-30 11:38:16 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-30 11:38:16 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-30 11:38:16 +0530
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-12-30 11:38:17 +0530
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (43.0ms)
+  Rendered users/new.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 76ms (Views: 71.2ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-12-30 11:38:28 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pmIqvs+r/i79Ak75d+x5GINbynly0bqu4uOTYVGoAoM=", "user"=>{"name"=>"yadagiri", "email"=>"yadagiritandu@gmail.com"}, "commit"=>"Create User"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`created_at`, `email`, `name`, `updated_at`) VALUES ('2013-12-30 06:08:28', 'yadagiritandu@gmail.com', 'yadagiri', '2013-12-30 06:08:28')
+  [1m[36m (106.2ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 127ms
+
+Errno::ENOENT (No such file or directory - /home/yadagiri-tandu/Downloads/206-action-mailer-in-rails-3/mailit_y/public/images/rails.png):
+  app/mailers/user_mailer.rb:6:in `read'
+  app/mailers/user_mailer.rb:6:in `registration_confirmation'
+  app/controllers/users_controller.rb:31:in `block in create'
+  app/controllers/users_controller.rb:29:in `create'
+
+
+  Rendered /home/yadagiri-tandu/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/yadagiri-tandu/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/yadagiri-tandu/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/yadagiri-tandu/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-12-30 11:39:01 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pmIqvs+r/i79Ak75d+x5GINbynly0bqu4uOTYVGoAoM=", "user"=>{"name"=>"yadagiri", "email"=>"yadagiritandu@gmail.com"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `name`, `updated_at`) VALUES ('2013-12-30 06:09:01', 'yadagiritandu@gmail.com', 'yadagiri', '2013-12-30 06:09:01')[0m
+  [1m[35m (82.5ms)[0m  COMMIT
+  Rendered user_mailer/registration_confirmation.html.erb (0.9ms)
+  Rendered user_mailer/registration_confirmation.text.erb (0.5ms)
+
+Sent mail to yadagiritandu@gmail.com (2109.9ms)
+Date: Mon, 30 Dec 2013 11:39:01 +0530
+From: ryan@railscasts.com
+To: yadagiri <yadagiritandu@gmail.com>
+Message-ID: <52c10dfd5a711_687f54206e453164@RMED0033LT.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_52c10dfd58526_687f54206e453077";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_52c10dfd58526_687f54206e453077
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+yadagiri,
+
+Thank you for registering!
+
+Edit profile: http://localhost:3000/users/2/edit
+----==_mimepart_52c10dfd58526_687f54206e453077
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>yadagiri,</p>
+
+<p>Thank you for registering!</p>
+
+<p><a href="http://localhost:3000/users/2/edit">Edit profile</a></p>
+
+----==_mimepart_52c10dfd58526_687f54206e453077--
+
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 2256ms (ActiveRecord: 84.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2013-12-30 11:39:03 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 16ms (Views: 10.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 11:39:03 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-30 11:39:03 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-30 11:39:03 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-30 11:39:03 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-30 11:39:03 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-30 11:39:03 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-30 11:39:03 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-30 11:39:03 +0530
+
+
+Started POST "/users" for 127.0.0.1 at 2013-12-30 11:49:03 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pmIqvs+r/i79Ak75d+x5GINbynly0bqu4uOTYVGoAoM=", "user"=>{"name"=>"yadagiri", "email"=>"yadagiri1125@gmail.com"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `name`, `updated_at`) VALUES ('2013-12-30 06:19:03', 'yadagiri1125@gmail.com', 'yadagiri', '2013-12-30 06:19:03')[0m
+  [1m[35m (80.0ms)[0m  COMMIT
+  Rendered user_mailer/registration_confirmation.html.erb (0.5ms)
+  Rendered user_mailer/registration_confirmation.text.erb (0.2ms)
+
+Sent mail to yadagiri1125@gmail.com (2097.8ms)
+Date: Mon, 30 Dec 2013 11:49:03 +0530
+From: ryan@railscasts.com
+To: yadagiri <yadagiri1125@gmail.com>
+Message-ID: <52c11057d0620_687f54d6840533c8@RMED0033LT.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_52c11057ced34_687f54d6840532f2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_52c11057ced34_687f54d6840532f2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+yadagiri,
+
+Thank you for registering!
+
+Edit profile: http://localhost:3000/users/3/edit
+----==_mimepart_52c11057ced34_687f54d6840532f2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>yadagiri,</p>
+
+<p>Thank you for registering!</p>
+
+<p><a href="http://localhost:3000/users/3/edit">Edit profile</a></p>
+
+----==_mimepart_52c11057ced34_687f54d6840532f2--
+
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 2201ms (ActiveRecord: 80.5ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2013-12-30 11:49:06 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-30 11:49:06 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-12-30 11:49:06 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-12-30 11:49:06 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-30 11:49:06 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-12-30 11:49:06 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-12-30 11:49:06 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-30 11:49:06 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-30 11:49:06 +0530
+  [1m[36m (137.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (243.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategories (20080621194238)
+  [1m[35m (200.7ms)[0m  CREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20080621194238')
+  [1m[36m (109.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateProducts (20080621194423)
+  [1m[35m (172.7ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` int(11), `name` varchar(255), `price` decimal, `description` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20080621194423')
+  [1m[36m (154.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCarts (20081221210944)
+  [1m[35m (240.3ms)[0m  CREATE TABLE `carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `purchased_at` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20081221210944')
+  [1m[36m (79.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateLineItems (20081221211031)
+  [1m[35m (205.3ms)[0m  CREATE TABLE `line_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `unit_price` decimal, `product_id` int(11), `cart_id` int(11), `quantity` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20081221211031')
+  [1m[36m (79.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateOrders (20090119051232)
+  [1m[35m (205.2ms)[0m  CREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cart_id` int(11), `ip_address` varchar(255), `first_name` varchar(255), `last_name` varchar(255), `card_type` varchar(255), `card_expires_on` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20090119051232')
+  [1m[36m (47.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateOrderTransactions (20090119062501)
+  [1m[35m (215.5ms)[0m  CREATE TABLE `order_transactions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order_id` int(11), `action` varchar(255), `amount` int(11), `success` tinyint(1), `authorization` varchar(255), `message` varchar(255), `params` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20090119062501')
+  [1m[36m (47.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (141.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (272.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateOrders (20100717234721)
+  [1m[35m (158.7ms)[0m  CREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `total_price` decimal, `purchased_at` datetime, `shipping` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20100717234721')
+  [1m[36m (106.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (165.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (290.2ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateArticles (20080719200447)
+  [1m[35m (134.7ms)[0m  CREATE TABLE `articles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `content` text, `author_name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20080719200447')
+  [1m[36m (95.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20080719201435)
+  [1m[35m (164.2ms)[0m  CREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `article_id` int(11), `author_name` varchar(255), `site_url` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20080719201435')
+  [1m[36m (79.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBlogs (20080809013828)
+  [1m[35m (172.1ms)[0m  CREATE TABLE `blogs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `subdomain` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20080809013828')
+  [1m[36m (79.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddBlogIdToArticles (20080809013917)
+  [1m[35m (322.6ms)[0m  ALTER TABLE `articles` ADD `blog_id` int(11)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20080809013917')
+  [1m[36m (46.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (137.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (297.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateProducts (20100712065243)
+  [1m[35m (160.1ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `price` decimal, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20100712065243')
+  [1m[36m (111.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
